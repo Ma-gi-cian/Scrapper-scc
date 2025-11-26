@@ -1,5 +1,6 @@
 import puppeteer, { Browser, Page } from "puppeteer";
-import { scrapeSeekJobs } from "./scrappers/seekScrapper";
+import SeekScrapper from "./scrappers/seekScrapper.js";
+import {SeekJobListing} from '../src/types/types'
 
 class Scrapper {
   private browser: Browser | null = null;
@@ -10,7 +11,7 @@ class Scrapper {
 
   async init_browser(): Promise<void> {
     this.browser = await puppeteer.launch({
-      headless: true,
+      headless: false,
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
@@ -73,26 +74,32 @@ class Scrapper {
     });
   }
 
-  getSeekPage(): Page {
+  async initPages(): Promise<void>{
+    if (!this.browser){
+      throw new Error('Browser not initialized')
+    }
+
+    this.seekPage = await this.browser.newPage();
+  }
+
+  getBrowser(): Browser | null {
+    return this.browser;
+  }
+
+  async init_scrapers() {
     if (!this.seekPage) {
       throw new Error('Seek page not initialized. Call initializeSeekPage() first.');
     }
-    return this.seekPage;
-  }
 
-  async closeSeekPage(): Promise<void> {
-    if (this.seekPage) {
-      await this.seekPage.close();
-      this.seekPage = null;
-    }
-  }
+    const seek = new SeekScrapper(this.seekPage, 'https://www.seek.com.au/software-engineer-jobs/remote');
+    const data = await seek.run();
 
-  async close(): Promise<void> {
-    await this.closeSeekPage();
-    if (this.browser) {
-      await this.browser.close();
-    }
+    data.forEach((element: SeekJobListing) => {
+      console.log(element)
+    });
+
   }
+  
 }
 
-export { Scrapper };
+export default Scrapper

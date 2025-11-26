@@ -1,16 +1,15 @@
-interface SeekJobListing {
+export interface SeekJobListing {
   jobId: string | null;
-  title: string | undefined;
-  company: string | undefined;
+  title?: string;
+  company?: string;
   locations: string[];
-  workArrangement: string | undefined;
-  salary: string | undefined;
-  description: string | undefined;
-  listingDate: string | undefined;
-  url: string | null;
+  workArrangement?: string;
+  salary?: string;
+  description?: string;           // Short description from card
+  fullDescription?: string;       // Full description from detail panel
+  listingDate?: string;
+  url?: string;
   isPremium: boolean;
-  classification: string | undefined;
-  subClassification: string | undefined;
+  classification?: string;
+  subClassification?: string;
 }
-
-export { SeekJobListing } 

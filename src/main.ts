@@ -1,30 +1,19 @@
-import { Scrapper } from "./Scrapper.js";
-import { scrapeSeekJobs } from "./scrappers/seekScrapper.js";
+import Scrapper from "./Scrapper.js";
 
-async function getJobs(): Promise<void> {
-  const scrapper = new Scrapper();
-
-  try {
+async function main(): Promise<void> {
+  let scrapper : Scrapper | null = null;
+  try{
+    scrapper = new Scrapper();
     await scrapper.init_browser();
-    await scrapper.initializeSeekPage();
-    
-    const seekPage = scrapper.getSeekPage();
+    console.log("Initializing the pages now")
+    await scrapper.initPages();
+    await scrapper.init_scrapers();
 
-    for (let i = 1; i < 6; i++) {
-      const jobs = await scrapeSeekJobs(
-        seekPage,
-        `https://www.seek.com.au/software-engineer-jobs/remote?page=${i}`
-      );
-
-      jobs.forEach(job => {
-        console.log(job);
-      });
-    }
-  } catch (error) {
-    console.error('Scraping error:', error);
-  } finally {
-    await scrapper.close();
+    // this is closing - important or else the resources on the server will be getting used up
+    await scrapper.getBrowser()?.close();
+  } catch(error) {
+    console.log('Browser was not initialized or already closed')
   }
 }
 
-getJobs();
+main()
