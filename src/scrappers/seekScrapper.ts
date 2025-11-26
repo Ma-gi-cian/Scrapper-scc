@@ -3,6 +3,10 @@ import { SeekJobListing } from "../types/types";
 
 // example url -> https://www.seek.com.au/software-engineer-jobs/remote
 
+/**
+ * THIS PAGE IS DOCUMENTED - USE THIS AS REFERENCE WHEN CREATING OTHER PAGES FOR OTHER WEBSITES
+ */
+
 class SeekScrapper {
   private page: Page
   private url: string
