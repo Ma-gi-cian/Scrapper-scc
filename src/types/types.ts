@@ -13,3 +13,16 @@ export interface SeekJobListing {
   classification?: string;
   subClassification?: string;
 }
+
+export interface ProspleJobListing {
+  title?: string;
+  company?: string;
+  location?: string;
+  salary?: string;
+  startDate?: string;
+  url?: string;
+  badges?: string[];          
+  timingInfo?: string;        
+  fullDescription?: string;   
+  dataNode?: string;          
+}

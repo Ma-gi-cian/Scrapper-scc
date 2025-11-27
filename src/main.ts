@@ -12,7 +12,7 @@ async function main(): Promise<void> {
     // this is closing - important or else the resources on the server will be getting used up
     await scrapper.getBrowser()?.close();
   } catch(error) {
-    console.log('Browser was not initialized or already closed')
+    console.log('Browser was not initialized or already closed' + error)
   }
 }
 

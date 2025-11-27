@@ -1,17 +1,20 @@
 import puppeteer, { Browser, Page } from "puppeteer";
-import SeekScrapper from "./scrappers/seekScrapper.js";
-import {SeekJobListing} from '../src/types/types'
+import SeekScrapper from "./scrappers/Seek.js";
+import ProspelScrapper from "./scrappers/Prospel.js";
+
+import {SeekJobListing, ProspleJobListing} from '../src/types/types'
 
 class Scrapper {
   private browser: Browser | null = null;
   private seekPage: Page | null = null;
+  private prospelPage: Page | null = null;
 
   constructor() {
   }
 
   async init_browser(): Promise<void> {
     this.browser = await puppeteer.launch({
-      headless: false,
+      headless: false, // you need to make this true - in production
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
@@ -80,6 +83,7 @@ class Scrapper {
     }
 
     this.seekPage = await this.browser.newPage();
+    this.prospelPage = await this.browser.newPage();
   }
 
   getBrowser(): Browser | null {
@@ -87,16 +91,28 @@ class Scrapper {
   }
 
   async init_scrapers() {
-    if (!this.seekPage) {
-      throw new Error('Seek page not initialized. Call initializeSeekPage() first.');
+
+    // THE EXECUTION WILL OCCUR IN EXECUTION BLOCKS - SCRAPE EVERYTHING AND END THE RESOURCE 
+    
+    // Seek execution block
+    // if (!this.seekPage) {
+    // throw new Error('Seek page not initialized. Call initializeSeekPage() first.');
+    // }
+    // const seek = new SeekScrapper(this.seekPage, 'https://www.seek.com.au/software-engineer-jobs/remote');
+    // const seekData = await seek.run(); // the run function executes .close after returning everything
+    // seekData.forEach((element: SeekJobListing) => {
+    //  console.log(element)
+    // });
+
+    // Prosple execution block
+    if(!this.prospelPage){
+      throw new Error('Prospel page not initialized')
     }
-
-    const seek = new SeekScrapper(this.seekPage, 'https://www.seek.com.au/software-engineer-jobs/remote');
-    const data = await seek.run();
-
-    data.forEach((element: SeekJobListing) => {
+    const prospel = new ProspelScrapper(this.prospelPage, 'https://au.prosple.com/software-engineering-graduate-jobs-programs-australia')
+    const prospelData = await prospel.run();
+    prospelData.forEach((element: ProspleJobListing) => {
       console.log(element)
-    });
+    })
 
   }
   

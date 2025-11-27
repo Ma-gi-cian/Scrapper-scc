@@ -81,7 +81,7 @@ class SeekScrapper {
       this.totalPages = 1;
     }
   }
-
+  // Need to be specific about the nativation logic in each websites
   /**
    * Clicks on a job card to open the detail panel and extracts full job description
    * @param jobId - The unique job ID to click on
