@@ -1,0 +1,371 @@
+[Thu, 27 Nov 2025 23:52:55 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 27 Nov 2025 23:52:55 GMT] [info] [<0.000.0>] database files will be saved to ./scrapper-db
+[Thu, 27 Nov 2025 23:52:55 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 301
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 200
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 200
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 200
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 200
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 200
+[Thu, 27 Nov 2025 23:53:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287587897 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287587898 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287587899 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287587900 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 200
+[Thu, 27 Nov 2025 23:53:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 200
+[Thu, 27 Nov 2025 23:53:16 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 200
+[Thu, 27 Nov 2025 23:53:16 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?limit=21&include_docs=true 200
+[Thu, 27 Nov 2025 23:53:16 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287587901 200
+[Thu, 27 Nov 2025 23:53:20 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_changes?limit=100 200
+[Thu, 27 Nov 2025 23:53:20 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287587902 200
+[Thu, 27 Nov 2025 23:53:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 27 Nov 2025 23:53:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_security 200
+[Thu, 27 Nov 2025 23:53:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287587903 200
+[Thu, 27 Nov 2025 23:53:22 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_index? 200
+[Thu, 27 Nov 2025 23:53:22 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/couch-watermark.png 200
+[Thu, 27 Nov 2025 23:53:23 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_active_tasks 200
+[Thu, 27 Nov 2025 23:53:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 200
+[Thu, 27 Nov 2025 23:53:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_node/node1@127.0.0.1/_config 200
+[Thu, 27 Nov 2025 23:53:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 200
+[Thu, 27 Nov 2025 23:53:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?include_docs=true&limit=100 200
+[Thu, 27 Nov 2025 23:53:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/couchdb-logo.png 200
+[Thu, 27 Nov 2025 23:53:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/github.png 200
+[Thu, 27 Nov 2025 23:53:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/asf-feather-logo.png 200
+[Thu, 27 Nov 2025 23:53:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/twitter.png 200
+[Thu, 27 Nov 2025 23:53:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/googleplus.png 200
+[Thu, 27 Nov 2025 23:53:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/linkedin.png 200
+[Thu, 27 Nov 2025 23:53:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 304
+[Thu, 27 Nov 2025 23:53:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 304
+[Thu, 27 Nov 2025 23:53:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287587904 200
+[Thu, 27 Nov 2025 23:53:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287587905 200
+[Thu, 27 Nov 2025 23:53:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287587906 200
+[Thu, 27 Nov 2025 23:53:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 200
+[Thu, 27 Nov 2025 23:53:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287587907 200
+[Thu, 27 Nov 2025 23:53:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?limit=21&include_docs=true 200
+[Thu, 27 Nov 2025 23:53:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_design/_auth/_info 200
+[Thu, 27 Nov 2025 23:53:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287587908 200
+[Thu, 27 Nov 2025 23:53:54 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_design/_auth/_info 304
+[Thu, 27 Nov 2025 23:53:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287587909 200
+[Thu, 27 Nov 2025 23:53:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287587910 200
+[Thu, 27 Nov 2025 23:53:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287587911 200
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287673739 200
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287673740 200
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287673742 200
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287673741 200
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 27 Nov 2025 23:54:33 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Thu, 27 Nov 2025 23:54:42 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287673743 200
+[Thu, 27 Nov 2025 23:54:42 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 27 Nov 2025 23:54:42 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?limit=21&include_docs=true 304
+[Thu, 27 Nov 2025 23:54:46 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_design/_replicator?conflicts=true 200
+[Thu, 27 Nov 2025 23:54:46 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_uuids?count=1 200
+[Thu, 27 Nov 2025 23:54:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?limit=21&include_docs=true 304
+[Thu, 27 Nov 2025 23:54:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 27 Nov 2025 23:54:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287673744 200
+[Thu, 27 Nov 2025 23:54:54 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?include_docs=true&limit=100 304
+[Thu, 27 Nov 2025 23:54:54 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 304
+[Thu, 27 Nov 2025 23:54:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287673745 200
+[Thu, 27 Nov 2025 23:54:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287673747 200
+[Thu, 27 Nov 2025 23:54:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287673746 200
+[Thu, 27 Nov 2025 23:56:13 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 27 Nov 2025 23:56:13 GMT] [info] [<0.000.0>] database files will be saved to C:/Users/adity/workspace/scc/scrapper-db
+[Thu, 27 Nov 2025 23:56:13 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287781841 200
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287781842 200
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287781843 200
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287781844 200
+[Thu, 27 Nov 2025 23:56:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287789403 200
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287789404 200
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287789406 200
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287789405 200
+[Thu, 27 Nov 2025 23:56:29 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 27 Nov 2025 23:58:51 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 27 Nov 2025 23:58:51 GMT] [info] [<0.000.0>] database files will be saved to ../
+[Thu, 27 Nov 2025 23:58:51 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764287940164 200
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764287940165 200
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764287940166 200
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764287940167 200
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 27 Nov 2025 23:59:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Thu, 27 Nov 2025 23:59:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 304
+[Thu, 27 Nov 2025 23:59:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_node/node1@127.0.0.1/_config 200
+[Fri, 28 Nov 2025 00:13:55 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 00:13:55 GMT] [info] [<0.000.0>] database files will be saved to scrapper-db
+[Fri, 28 Nov 2025 00:13:55 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 00:14:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 00:14:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 00:14:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764288844941 200
+[Fri, 28 Nov 2025 00:14:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764288844942 200
+[Fri, 28 Nov 2025 00:14:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764288844943 200
+[Fri, 28 Nov 2025 00:14:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 00:14:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764288844944 200
+[Fri, 28 Nov 2025 00:38:45 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 00:38:45 GMT] [info] [<0.000.0>] database files will be saved to .
+[Fri, 28 Nov 2025 00:38:45 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764290333321 200
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764290333322 200
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764290333323 200
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764290333324 200
+[Fri, 28 Nov 2025 00:38:53 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 00:39:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 304
+[Fri, 28 Nov 2025 00:39:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 304
+[Fri, 28 Nov 2025 00:39:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/couchdb-logo.png 304
+[Fri, 28 Nov 2025 00:39:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/github.png 304
+[Fri, 28 Nov 2025 00:39:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/asf-feather-logo.png 304
+[Fri, 28 Nov 2025 00:39:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/twitter.png 304
+[Fri, 28 Nov 2025 00:39:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/googleplus.png 304
+[Fri, 28 Nov 2025 00:39:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/linkedin.png 304
+[Fri, 28 Nov 2025 00:39:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator/_all_docs?include_docs=true&limit=100 304
+[Fri, 28 Nov 2025 00:39:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 304
+[Fri, 28 Nov 2025 00:39:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_membership 304
+[Fri, 28 Nov 2025 00:39:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_node/node1@127.0.0.1/_config 200
+[Fri, 28 Nov 2025 00:39:08 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_active_tasks 304
+[Fri, 28 Nov 2025 00:39:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764290333325 200
+[Fri, 28 Nov 2025 00:39:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764290333326 200
+[Fri, 28 Nov 2025 00:39:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764290333327 200
+[Fri, 28 Nov 2025 00:46:37 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 00:46:37 GMT] [info] [<0.000.0>] database files will be saved to .
+[Fri, 28 Nov 2025 00:46:37 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764290801806 200
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764290801807 200
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764290801808 200
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764290801809 200
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Fri, 28 Nov 2025 00:46:41 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764290804166 200
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764290804167 200
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764290804168 200
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764290804169 200
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 00:46:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764290809050 200
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764290809051 200
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764290809052 200
+[Fri, 28 Nov 2025 00:46:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764290809053 200
+[Fri, 28 Nov 2025 00:49:25 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 00:49:25 GMT] [info] [<0.000.0>] database files will be saved to .
+[Fri, 28 Nov 2025 00:49:25 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 00:50:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 200
+[Fri, 28 Nov 2025 00:50:42 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 200
+[Fri, 28 Nov 2025 00:51:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /scrapper-db 201
+[Fri, 28 Nov 2025 00:51:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 200
+[Fri, 28 Nov 2025 00:51:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?include_docs=true 200
+[Fri, 28 Nov 2025 00:52:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 200
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764291130687 200
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764291130688 200
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764291130689 200
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db?_=1764291130691 200
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764291130690 200
+[Fri, 28 Nov 2025 00:52:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 00:52:12 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 200
+[Fri, 28 Nov 2025 00:52:12 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=21 200
+[Fri, 28 Nov 2025 00:52:12 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764291130692 200
+[Fri, 28 Nov 2025 00:52:20 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=21 304
+[Fri, 28 Nov 2025 00:52:21 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=21 304
+[Fri, 28 Nov 2025 00:52:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/018a16b8d3f6df51064d5c4b3eac6252d10086d98e6e08f31ec2d3499c61443c?conflicts=true 200
+[Fri, 28 Nov 2025 00:52:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_uuids?count=1 200
+[Fri, 28 Nov 2025 00:52:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Fri, 28 Nov 2025 00:52:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=21 304
+[Fri, 28 Nov 2025 00:52:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764291130693 200
+[Fri, 28 Nov 2025 00:52:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101 200
+[Fri, 28 Nov 2025 00:53:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101&skip=100 200
+[Fri, 28 Nov 2025 01:20:22 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 01:20:22 GMT] [info] [<0.000.0>] database files will be saved to .
+[Fri, 28 Nov 2025 01:20:22 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 01:20:26 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs 200
+[Fri, 28 Nov 2025 06:07:45 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 06:07:45 GMT] [info] [<0.000.0>] database files will be saved to .
+[Fri, 28 Nov 2025 06:07:45 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101 304
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764310071682 200
+[Fri, 28 Nov 2025 06:07:51 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 06:07:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Fri, 28 Nov 2025 06:08:01 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101 304
+[Fri, 28 Nov 2025 06:08:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/018a16b8d3f6df51064d5c4b3eac6252d10086d98e6e08f31ec2d3499c61443c?conflicts=true 304
+[Fri, 28 Nov 2025 06:08:07 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_uuids?count=1 200
+[Fri, 28 Nov 2025 06:08:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Fri, 28 Nov 2025 06:08:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101 304
+[Fri, 28 Nov 2025 06:08:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764310071683 200
+[Fri, 28 Nov 2025 07:05:30 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Fri, 28 Nov 2025 07:05:30 GMT] [info] [<0.000.0>] database files will be saved to .
+[Fri, 28 Nov 2025 07:05:30 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Fri, 28 Nov 2025 07:05:43 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764313544082 200
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764313544083 200
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764313544084 200
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764313544085 200
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Fri, 28 Nov 2025 07:05:44 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db?_=1764313544086 200
+[Fri, 28 Nov 2025 07:05:45 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Fri, 28 Nov 2025 07:05:45 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101 304
+[Fri, 28 Nov 2025 07:05:45 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764313544087 200
+[Fri, 28 Nov 2025 07:05:59 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11 200
+[Fri, 28 Nov 2025 07:06:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=10 200
+[Fri, 28 Nov 2025 07:06:00 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=20 200
+[Fri, 28 Nov 2025 07:06:01 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=30 200
+[Fri, 28 Nov 2025 07:06:01 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=40 200
+[Fri, 28 Nov 2025 07:06:01 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=50 200
+[Fri, 28 Nov 2025 07:06:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=60 200
+[Fri, 28 Nov 2025 07:06:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=70 200
+[Fri, 28 Nov 2025 07:06:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=80 200
+[Fri, 28 Nov 2025 07:06:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=90 200
+[Fri, 28 Nov 2025 07:06:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=100 200
+[Fri, 28 Nov 2025 07:06:03 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=110 200
+[Fri, 28 Nov 2025 07:06:03 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11&skip=120 200
+[Fri, 28 Nov 2025 07:06:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/f72e4669fa76c8615baac31be628d8df501331ad07ee3c3723c95702a8d91a1d?conflicts=true 200
+[Fri, 28 Nov 2025 07:06:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_uuids?count=1 200
+[Fri, 28 Nov 2025 07:06:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Fri, 28 Nov 2025 07:06:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=11 304
+[Fri, 28 Nov 2025 07:06:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764313544088 200
+[Fri, 28 Nov 2025 07:06:16 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/_all_docs?limit=101 304
+[Fri, 28 Nov 2025 07:06:20 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /scrapper-db/8f375301ef9eecff0980b9a1f3b159330a3d40d6669fc09ea2cd245e2f8adbe4?conflicts=true 200
+[Fri, 28 Nov 2025 07:06:20 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_uuids?count=1 200
+[Sat, 29 Nov 2025 10:46:50 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Sat, 29 Nov 2025 10:46:50 GMT] [info] [<0.000.0>] database files will be saved to ./databases
+[Sat, 29 Nov 2025 10:46:50 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 200
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764413215703 200
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764413215704 200
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764413215705 200
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764413215706 200
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Sat, 29 Nov 2025 10:46:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Sat, 29 Nov 2025 10:48:25 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Sat, 29 Nov 2025 10:48:25 GMT] [info] [<0.000.0>] database files will be saved to ./databases
+[Sat, 29 Nov 2025 10:48:25 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764413327456 200
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764413327457 200
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764413327458 200
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764413327459 200
+[Sat, 29 Nov 2025 10:48:47 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304
+[Sat, 29 Nov 2025 10:49:30 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Sat, 29 Nov 2025 10:49:30 GMT] [info] [<0.000.0>] database files will be saved to ./databases/scrapper-db
+[Sat, 29 Nov 2025 10:49:30 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1764413376936 200
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1764413376937 200
+[Sat, 29 Nov 2025 10:49:36 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1764413376938 200
+[Sat, 29 Nov 2025 10:49:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Sat, 29 Nov 2025 10:49:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1764413376939 200
+[Sat, 29 Nov 2025 10:49:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 304

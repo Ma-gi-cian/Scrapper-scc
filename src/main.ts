@@ -9,6 +9,15 @@ async function main(): Promise<void> {
     await scrapper.initPages();
     await scrapper.init_scrapers();
 
+    const spreadsheetId = await scrapper.exportToGoogleSheets()
+
+    if (spreadsheetId) {
+      console.log("Done exporting")
+      console.log(`https://docs.google.com/spreadsheets/d/${spreadsheetId}`)
+    }
+
+    await scrapper.viewExportHistory()
+
     // this is closing - important or else the resources on the server will be getting used up
     await scrapper.getBrowser()?.close();
   } catch(error) {

@@ -1,18 +1,21 @@
 import puppeteer, { Browser, Page } from "puppeteer";
 import SeekScrapper from "./scrappers/Seek.js";
 import ProspelScrapper from "./scrappers/Prospel.js";
-
-import {SeekJobListing, ProspleJobListing} from '../src/types/types'
+import Database from "./Database.js";
+import GoogleSheetsExporter from "./GoogleSheetsExporter.js";
 
 class Scrapper {
   private browser: Browser | null = null;
   private seekPage: Page | null = null;
   private prospelPage: Page | null = null;
+  private Database!: Database 
 
   constructor() {
   }
 
   async init_browser(): Promise<void> {
+    this.Database = new Database();
+    await this.Database.InitDB()
     this.browser = await puppeteer.launch({
       headless: false, // you need to make this true - in production
       args: [
@@ -26,58 +29,7 @@ class Scrapper {
     });
   }
 
-  async initializeSeekPage(): Promise<void> {
-    if (!this.browser) {
-      throw new Error('Browser not initialized. Call init_browser() first.');
-    }
-
-    this.seekPage = await this.browser.newPage();
-
-    // Set viewport
-    await this.seekPage.setViewport({
-      width: 1920,
-      height: 1080,
-      deviceScaleFactor: 1
-    });
-
-    await this.seekPage.setExtraHTTPHeaders({
-      'Accept-Language': 'en-US,en;q=0.9',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-      'Accept-Encoding': 'gzip, deflate, br',
-      'Connection': 'keep-alive',
-      'Upgrade-Insecure-Requests': '1'
-    });
-
-    await this.seekPage.evaluateOnNewDocument(() => {
-      Object.defineProperty(navigator, 'webdriver', {
-        get: () => false
-      });
-
-      // Mock plugins
-      Object.defineProperty(navigator, 'plugins', {
-        get: () => [1, 2, 3, 4, 5]
-      });
-
-      // Mock languages
-      Object.defineProperty(navigator, 'languages', {
-        get: () => ['en-US', 'en']
-      });
-
-      // Add chrome property
-      (window as any).chrome = {
-        runtime: {}
-      };
-
-      const originalQuery = window.navigator.permissions.query;
-      window.navigator.permissions.query = (parameters: any) => (
-        parameters.name === 'notifications' ?
-          Promise.resolve({ state: (Notification as any).permission } as any) :
-          originalQuery(parameters)
-      );
-    });
-  }
-
-  async initPages(): Promise<void>{
+async initPages(): Promise<void>{
     if (!this.browser){
       throw new Error('Browser not initialized')
     }
@@ -95,26 +47,81 @@ class Scrapper {
     // THE EXECUTION WILL OCCUR IN EXECUTION BLOCKS - SCRAPE EVERYTHING AND END THE RESOURCE 
     
     // Seek execution block
-    // if (!this.seekPage) {
-    // throw new Error('Seek page not initialized. Call initializeSeekPage() first.');
-    // }
-    // const seek = new SeekScrapper(this.seekPage, 'https://www.seek.com.au/software-engineer-jobs/remote');
-    // const seekData = await seek.run(); // the run function executes .close after returning everything
-    // seekData.forEach((element: SeekJobListing) => {
-    //  console.log(element)
-    // });
+    if (!this.seekPage) {
+    throw new Error('Seek page not initialized. Call initializeSeekPage() first.');
+    }
+    const seek = new SeekScrapper(this.seekPage, 'https://www.seek.com.au/software-engineer-jobs/remote');
+    const seekData = await seek.run(); // the run function executes .close after returning everything
+    const seekResults = await this.Database.bulkAddJobs(
+      seekData.map(listing => ({listing, source: 'seek' as const})) 
+    ) 
+    console.log("Prospel Data added:",seekResults.added)
 
     // Prosple execution block
-    if(!this.prospelPage){
-      throw new Error('Prospel page not initialized')
+    if(!this.prospelPage || !this.Database){
+      throw new Error('Prospel page not initialized or Database not initialized')
     }
-    const prospel = new ProspelScrapper(this.prospelPage, 'https://au.prosple.com/software-engineering-graduate-jobs-programs-australia')
+    const prospel = new ProspelScrapper(
+      this.prospelPage, 
+      'https://au.prosple.com/software-engineering-graduate-jobs-programs-australia'
+    );
     const prospelData = await prospel.run();
-    prospelData.forEach((element: ProspleJobListing) => {
-      console.log(element)
-    })
+    const prospelResults = await this.Database.bulkAddJobs(
+      prospelData.map(listing => ({ listing, source: 'prosple' as const }))
+    );
+
+ // console.log('Results added', results.added)
 
   }
+ 
+// Add method to view export history
+async viewExportHistory(): Promise<void> {
+  if (!this.Database) {
+    throw new Error('Database not initialized');
+  }
+
+  const exports = await this.Database.getAllExports();
+  
+  console.log(`\nExport History (${exports.length} total exports)\n`);
+  
+  exports.forEach((exp, index) => {
+    console.log(`${index + 1}. ${new Date(exp.exportDate).toLocaleString()}`);
+    console.log(`Jobs: ${exp.jobCount}`);
+    console.log(`Link: ${exp.spreadsheetUrl}`);
+    console.log(`Spreadsheet ID: ${exp.spreadsheetId}\n`);
+  });
+}
+
+async exportToGoogleSheets(): Promise<string> {
+  if (!this.Database) {
+    throw new Error('Database not initialized');
+  }
+
+  console.log('\nExporting to Google Sheets...');
+  
+  const unpushedJobs = await this.Database.getUnpushedJobs();
+  console.log(`Found ${unpushedJobs.length} unpushed jobs`);
+
+  if (unpushedJobs.length === 0) {
+    console.log('No new jobs to export');
+    return '';
+  }
+
+  const exporter = new GoogleSheetsExporter();
+  await exporter.initialize(); // Initialize OAuth2
+  
+  const spreadsheetId = await exporter.createSpreadsheet(
+    unpushedJobs,
+    `Job Listings - ${new Date().toISOString().split('T')[0]}`
+  );
+
+  const jobHashes = unpushedJobs.map(job => job.hash);
+  await this.Database.addExportRecord(spreadsheetId, jobHashes);
+  await this.Database.bulkMarkAsPushed(jobHashes);
+  
+  return spreadsheetId;
+}
+
   
 }
 

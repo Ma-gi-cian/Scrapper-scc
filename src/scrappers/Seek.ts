@@ -1,5 +1,6 @@
 import { Page } from "puppeteer";
 import { SeekJobListing } from "../types/types";
+import { generateJobHash } from "../utils/hashUtils.js";
 
 // example url -> https://www.seek.com.au/software-engineer-jobs/remote
 
@@ -193,6 +194,7 @@ class SeekScrapper {
               card.querySelector(selector)?.textContent?.trim();
 
             const isPremium = card.getAttribute('data-automation') === 'premiumJob';
+
             
             return {
               jobId: card.getAttribute('data-job-id'),
@@ -205,10 +207,11 @@ class SeekScrapper {
               description: getText('span[data-automation="jobShortDescription"]'),
               listingDate: getText('span[data-automation="jobListingDate"]'),
               // Get href attribute
-              url: card.querySelector('a[data-automation="job-list-item-link-overlay"]')?.getAttribute('href'),
+              url: "https://seek.com"+card.querySelector('a[data-automation="job-list-item-link-overlay"]')?.getAttribute('href'),
               isPremium: isPremium,
               classification: getText('span[data-automation="jobClassification"]'),
               subClassification: getText('span[data-automation="jobSubClassification"]'),
+              pushed: false
             } as SeekJobListing; // typecasting this shit - kids learn why ? typescript 
           });
       });
@@ -224,6 +227,9 @@ class SeekScrapper {
           
           // Merge panel details into the job object
           jobs[j] = { ...job, ...panelDetails };
+
+          jobs[j].hash = generateJobHash(jobs[j])
+          console.log("Seek Hash Length:",jobs[j].hash.length)
           
           // Add a small delay between clicks
           await this.delay(400);

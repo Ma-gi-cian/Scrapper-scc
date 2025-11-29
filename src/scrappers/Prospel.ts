@@ -1,5 +1,6 @@
 import { Page } from "puppeteer";
 import { ProspleJobListing } from "../types/types";
+import { generateJobHash } from "../utils/hashUtils.js";  // Import the utility function
 
 // example url -> https://au.prosple.com/software-engineering-graduate-jobs-programs-australia
 
@@ -50,8 +51,6 @@ class ProspelScrapper {
    */
   async get_loop_number(): Promise<void> {
     try {
-      console.log('Loading initial page...');
-      
       await this.page.goto(this.url, {
         waitUntil: 'domcontentloaded',
         timeout: 60000
@@ -107,12 +106,11 @@ class ProspelScrapper {
       // click the card to open side panel
       await card.click();
       
-      //  side panel needs to be loaded fully load
+      // wait for side panel to fully load
       await this.delay(2500);
       
       // extract description from the side panel
       const panelData = await this.page.evaluate(() => {
-        // the llm was not sure which container is the sidepanel - so did this to make it work - it was giving this all could be a container 
         const possiblePanelSelectors = [
           'aside',
           'div[role="dialog"]',
@@ -189,8 +187,6 @@ class ProspelScrapper {
 
   /**
    * Builds the pagination URL with ?start= parameter
-   * here - it uses the start index like __url__?start=0 (for 1st page) and similarly - __url__?start=20 for the second page
-   * Increment of 20 for every page - starting from 0
    */
   private buildPageUrl(pageNum: number): string {
     if (pageNum === 1) {
@@ -224,7 +220,8 @@ class ProspelScrapper {
         await this.delay(3000);
         await this.page.waitForSelector('section[role="button"]', { timeout: 20000 });
 
-        // edxtract basic info from all job cards on this page
+        // extract basic info from all job cards on this page
+        // DO NOT generate hash here - it won't work in browser context
         const jobs = await this.page.$$eval(
           'section[role="button"]',
           (cards: Element[]): any[] => {
@@ -233,32 +230,33 @@ class ProspelScrapper {
                 card.querySelector(selector)?.textContent?.trim();
 
               // Company
-              const company = card.querySelector('img')?.getAttribute('alt') || getText('p');
+              const company = card.querySelector('img')?.getAttribute('alt') || getText('p') || "";
 
               // Title and URL
               const titleLink = card.querySelector('h2 a');
-              const title = titleLink?.textContent?.trim();
+              const title = titleLink?.textContent?.trim() || "";
               const url = titleLink?.getAttribute('href');
 
               // Location
               const locationEl = Array.from(card.querySelectorAll('p')).find(p => 
                 p.textContent?.includes(',') || p.textContent?.includes('Online')
               );
-              const location = locationEl?.textContent?.trim();
+              const location = locationEl?.textContent?.trim() || "";
 
               // Salary
               const salary = getText('span[class*="hPQoxt"]');
 
               // Start date
-              const startDate = getText('div.field-item');
-
+              const startDateStr = getText('div.field-item');
+              
               return {
                 title,
                 company,
                 location,
                 salary,
-                startDate,
+                startDateStr,
                 url: url ? `https://au.prosple.com${url}` : undefined,
+                pushed: false
               };
             });
           }
@@ -266,24 +264,32 @@ class ProspelScrapper {
 
         console.log(`Found ${jobs.length} jobs on page ${pageNum}`);
 
-        // click each card and extract from side panel
+        // click each card and extract from side panel, then generate hash
         for (let j = 0; j < jobs.length; j++) {
           const job = jobs[j];
-          // TODO: Add logging here  
+          console.log(`  [${j + 1}/${jobs.length}] Opening: ${job.title}`);
+          
+          // Get full description from side panel
           const details = await this.getJobDetailsFromSidePanel(j);
           jobs[j] = { ...job, ...details };
+          
+          // This is the place where we generate the hash
+          jobs[j].hash = generateJobHash(jobs[j]);
           
           await this.page.keyboard.press('Escape');
           await this.delay(800);
         }
 
         allJobs.push(...jobs);
+        console.log(`Completed page ${pageNum}. Total jobs: ${allJobs.length}`);
         
       } catch (error) {
         console.error(`Error scraping page ${pageNum}:`, error);
       }
     }
 
+    console.log(`\n=== Scraping Complete ===`);
+    console.log(`Total jobs scraped: ${allJobs.length}`);
 
     return allJobs;
   }
