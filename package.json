@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "pouchdb": "^9.0.0",
+    "pouchdb-find": "^9.0.0",
     "puppeteer": "^24.31.0",
     "typescript": "^5.9.3"
   },
